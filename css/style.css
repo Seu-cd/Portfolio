@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/*共通部分*/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: rgb(74, 77, 95);
+  background-color: rgb(245, 245, 245);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*ヘッダー*/
+
+.logo {
+  width: 120px;
+}
+
+.main-nav ul {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+  text-align: center;
+}
+
+.main-nav a {
+  font-size: 1.375rem;
+  color: #fff;
+}
+
+.main-nav a:hover {
+  color: #0090aa;
+}
+
+.nav_link {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav_link:before {
+  content: ""; /*疑似要素の中身は空（記述は必須）*/
+  position: absolute; /*子要素として疑似要素を固定*/
+  left: 0; /*長さはテキストの両端まで*/
+  right: 0; /*長さはテキストの両端まで*/
+  bottom: -1px;  /*線の上下位置*/
+  width: 100%; /*線の長さ*/
+  height: 1px; /*線の太さ*/
+  background-color: rgb(74, 77, 95); /*線の色*/
+  transform: scale(0, 1); /*横方向に0状態から全体まで線を入れる*/
+  transform-origin: center; /*中央を起点にアニメーション*/
+  transition: transform .2s; /*アニメーションの時間*/
+}
+
+.nav_link:hover:before {
+  transform: scale(1); /*ホバー時に等倍へ拡大*/
+}
+
+
+.page-header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(255,255,255,0.5);
+  padding: 16px 16px;
+}
+
+/*ホーム*/
+
+.content p {
+  font-size: 1.5rem;
+  margin: 10px 0 42px;
+}
+
+#home {
+  text-align: center;
+  color: #fff;
+  padding: 20vh 0;
+}
+
+#home p {
+  font-size: 1.5rem;
+  margin: 10px 0 42px;
+}
+
+.content {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*見出し*/
+
+.page-title {
+  font-size: 5rem;
+  font-family: 'Philosopher', serif;
+  /* text-transform: uppercase; */
+  font-weight: normal;
+}
+
+/*ボタン*/
+
+.button {
+  font-size: 1.375rem;
+  background: #365b6d;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.button:hover {
+  background: #0090aa;
+}
+
+/*大きな背景画像*/
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+/*#home {
+  background-image: url(../media/images/45602.jpg);
+
+}*/
+
+#home .page-title {
+  text-transform: none;
+}
+
+/*追加*/
+.img-bg-01 {
+  background-image: url(../media/images/startup-593327_1920.jpg);
+  background-color: rgba(165, 210, 245, 0.219);
+  background-blend-mode: lighten;
+}
+
+.img-bg-02 {
+  background-image: url(../media/images/hie1.jpg);
+  background-color: rgba(165, 210, 245, 0.219);
+  background-blend-mode: lighten;
+}
+
+.img-bg-03 {
+  background-image: url(../media/images/hie2.jpg);
+  background-color: rgba(165, 210, 245, 0.219);
+  background-blend-mode: lighten;
+}
+
+.img-bg-04 {
+  background-image: url(../media/images/hie3.jpg);
+  background-color: rgba(165, 210, 245, 0.219);
+  background-blend-mode: lighten;
+}
+
+.img-bg-05 {
+  background-image: url(../media/images/hie4.jpg);
+  background-color: rgba(165, 210, 245, 0.219);
+  background-blend-mode: lighten;
+}
+
+/*.img-bg-02 {
+  background-image: url(../media/images/hie2.jpg);
+  background-color: rgba(165, 210, 245, 0.219);
+  background-blend-mode: lighten;
+}
+
+.img-bg-02 div {
+  color: #000;
+}
+
+.img-bg-03 {
+  background: #365b6d;
+}
+
+.img-bg-04 {
+  background: rgb(248, 248, 248);
+}
+
+.img-bg-04 div {
+  color: #000;
+}*/
